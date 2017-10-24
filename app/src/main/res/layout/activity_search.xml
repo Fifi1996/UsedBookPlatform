@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="mjd.com.usedbookplatform.switchIndex.SearchActivity">
+    <TextView
+        android:textColor="#726DD1"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="** 欢迎来到二手书籍搜索频道 **"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16sp"
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 书籍名称:"/>
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/search_edit_forBook"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:hint="例如:平凡的世界(支持模糊搜索)"/>
+        <Button
+            android:id="@+id/search_send_forBook"
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=" 搜索 "/>
+    </LinearLayout>
+
+    <ListView
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_listView"></ListView>
+    <TextView
+        android:id="@+id/search_declare"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   在这里，搜索你想搜索的任何书籍，只需要输入与书籍名相关的关键字即可，当然全称搜索结果更为精确"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/listBook_errorPage"
+        android:textAlignment="center"
+        android:layout_marginTop="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="没有搜索到相关书籍的信息，请重新搜索,跟换关键词"/>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="mjd.com.usedbookplatform.switchIndex.DiscussActivity">
+    <TextView
+        android:id="@+id/discuss_title"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="书籍的信息:"/>
+    <ListView
+        android:focusable="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/discuss_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_discuss_book">
+
+    </ListView>
+    <TextView
+        android:visibility="gone"
+        android:layout_below="@+id/discuss_title"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_discuss_errorPage"
+        android:text="暂时还没有评论哦"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/list_discuss_editDiscuss"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请在这里输入评论内容"/>
+        <Button
+            android:id="@+id/list_discuss_sendDiscuss"
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"/>
+    </LinearLayout>
+
+</RelativeLayout>

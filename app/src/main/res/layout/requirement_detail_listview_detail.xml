@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="6dp"
+    android:paddingBottom="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/requirement_detail_reply_time_before"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="回复于: "/>
+       <TextView
+           android:layout_toRightOf="@+id/requirement_detail_reply_time_before"
+           android:id="@+id/requirement_detail_reply_time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:textColor="#f509c6"
+           android:layout_marginRight="16dp"
+           android:layout_alignParentRight="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/requirement_detail_reply_order"
+           android:text="回复顺序"/>
+   </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容: "/>
+        <TextView
+            android:id="@+id/requirement_detail_reply_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

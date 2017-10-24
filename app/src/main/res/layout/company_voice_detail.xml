@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:paddingRight="4dp"
+    android:paddingLeft="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/voice_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名: "/>
+        <TextView
+            android:id="@+id/voice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="时间: "/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/voice_needs"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发布的需求: "/>
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/voice_needs_connect"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="联系方式: "/>
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/voice_isResolve"
+            android:layout_marginRight="16dp"
+            android:text="需求已被解决"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#da1298"
+            android:textSize="12sp"
+            android:layout_toLeftOf="@+id/voice_reply"/>
+        <TextView
+            android:id="@+id/voice_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="回复次数: "/>
+    </RelativeLayout>
+</LinearLayout>

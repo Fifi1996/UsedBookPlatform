@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_above="@+id/flag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/aboutUs_useInfo">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aboutUs_userInfo_portrait"
+            android:src="@drawable/portrait"/>
+
+        <Button
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/aboutUs_login_userInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户登录注册" />
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aboutUs_userInfo_name"
+            android:text="个人信息，例如姓名"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/flag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:layout_below="@+id/flag"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关于我们"
+            android:onClick="aboutUs"/>
+            <TextView
+                android:singleLine="true"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:id="@+id/aboutUs_showWeatherAndLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="显示天气，地理位置，时间等"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/aboutUs_showWeatherAndLocationDetail"
+            android:fadingEdge="horizontal"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:layout_marginTop="28dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="今天的天气很好啊，欢迎你的到来，热烈欢迎，注意保暖，天气干燥，注意保暖，好好学习"/>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <ImageView
+
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:id="@+id/book_list_img"
+        android:src="@drawable/test"/>
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:id="@+id/book_list_text_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="书籍主题: "/>
+        <TextView
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:paddingTop="4dp"
+            android:id="@+id/book_list_text_declare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="书籍介绍: "
+            />
+        <RelativeLayout
+            android:paddingTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/book_list_mark"
+                android:text="书籍类别: "/>
+            <TextView
+                android:paddingRight="16dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#C1A075"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/book_list_text_time"
+                android:textSize="10sp"
+                android:text="上架时间: "/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

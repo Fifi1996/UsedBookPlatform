@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mjd.com.usedbookplatform.switchIndex.BuyBookDetail">
+
+    <TextView
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="梅金东"
+        android:layout_alignParentStart="true"
+        android:id="@+id/buy_book_info" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/number"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout"></LinearLayout>
+    <LinearLayout
+        android:id="@+id/number"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buy_book_sellerInfo"
+        android:layout_alignParentEnd="true">
+        <TextView
+            android:paddingRight="36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购买书籍数目: "/>
+        <NumberPicker
+            android:id="@+id/numberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </NumberPicker>
+        <TextView
+            android:paddingLeft="36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 本"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/number"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的地址:"/>
+            <EditText
+                android:hint="请填写您的住址，方便图书的送达,加上姓名更好哦"
+                android:textSize="12sp"
+                android:singleLine="true"
+                android:id="@+id/buyAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系方式:"/>
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/buyTel"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="此项必填,售卖者依据此联系你;例如:18395589696"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注:"/>
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/buyAddition"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="这里你可以填写你的额外需求哦"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout2">
+        <Button
+            android:onClick="goBack"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="还没想好，过会再买"/>
+        <Button
+            android:id="@+id/confirmBuyIt"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确认"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/buy_book_sellerInfo"
+        android:textAlignment="center"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="暂时未获取到售卖者的相关信息，请稍后重试"
+        android:layout_below="@+id/buy_book_info"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="55dp" />
+
+</RelativeLayout>

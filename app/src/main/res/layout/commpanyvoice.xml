@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/companyVoice_listView"></ListView>
+    <android.support.design.widget.FloatingActionButton
+        app:fabSize="mini"
+        android:id="@+id/companyVoice_floatButton"
+        android:visibility="gone"
+        android:src="@drawable/editrequirement"
+        android:layout_marginBottom="72dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:text="需求正在加载中。。。。客官不要急哦"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/companyVoice_welcome_img"/>
+    <ImageView
+        android:visibility="gone"
+        android:scaleType="center"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/companyVoice_errorPage"
+        android:src="@drawable/booknotfound"/>
+
+</RelativeLayout>
